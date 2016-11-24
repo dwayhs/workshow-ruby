@@ -1,5 +1,4 @@
 require 'rspec'
-require_relative '../fizzbuzz'
 
 RSpec.describe 'FizzBuzz' do
   describe 'FizzBuzz execution' do
