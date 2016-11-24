@@ -1,3 +1,5 @@
 class FizzBuzz
-  def initialize
+  def initialize(list)
+    @list = list
+  end
 end
