@@ -5,8 +5,13 @@ RSpec.describe 'FizzBuzz' do
     subject { FizzBuzz.new(list).run }
 
     context 'when list have 5 items' do
-      let(:list) { [1..5] }
-      it { expect(subject).to be [1, 2, 'Fizz', 4, 'Buzz']}
+      let(:list) { 1..5 }
+      it { expect(subject).to eq [1, 2, 'Fizz', 4, 'Buzz']}
+    end
+
+    context 'when list have 15 items' do
+      let(:list) { 1..15 }
+      it { expect(subject).to eq [1, 2, 'Fizz', 4, 'Buzz', 'Fizz', 7, 8, 'Fizz', 'Buzz', 11, 'Fizz', 13, 14, 'FizzBuzz']}
     end
   end
 end
